@@ -1,7 +1,7 @@
 {
-  "name": "celebal-tech",
+  "name": "hello-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple server using node.js that responds with 'Hello World!' to all requests.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,6 +9,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Siddhartha Mukherjee <siddharthamukherjee@github>",
   "license": "ISC"
 }
