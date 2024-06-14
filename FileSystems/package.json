@@ -13,8 +13,5 @@
     "Filesystems"
   ],
   "author": "Siddhartha Mukherjee",
-  "license": "ISC",
-  "dependencies": {
-    "nodemon": "^3.1.3"
-  }
+  "license": "ISC"
 }
