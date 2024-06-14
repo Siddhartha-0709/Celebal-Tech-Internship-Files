@@ -16,14 +16,14 @@ npm start
 ```
 ## **The URL Parameters:**
 
-*Base URL*- `http://localhost:3000/`
-**Query Params-**
-*Write File*- `http://localhost:3000/?fileName=NameofTheFile&mode=write&data=TheMessageToWriteToFile`
-*Read File*- `http://localhost:3000/fileName=NameofTheFile&mode=read`
-*Delete File*- `http://localhost:3000/?fileName=newFileToTest&mode=delete`
+*Base URL*- `http://localhost:3000/`<br/><br/>
+**Query Params-**<br/>
+*Write File*- `http://localhost:3000/?fileName=NameofTheFile&mode=write&data=TheMessageToWriteToFile`<br/>
+*Read File*- `http://localhost:3000/fileName=NameofTheFile&mode=read`<br/>
+*Delete File*- `http://localhost:3000/?fileName=newFileToTest&mode=delete`<br/>
 
 ### Submitted By:
 
-**Name-** **Siddhartha Mukherjee**
-**Domain-** **Node JS**
+**Name-** **Siddhartha Mukherjee**<br/>
+**Domain-** **Node JS**<br/>
 **Email-** **siddharthamukherjee0709@gmail.com**
