@@ -1,0 +1,20 @@
+{
+  "name": "file-systems",
+  "version": "1.0.0",
+  "description": "A nodejs code to understand the Filesystems and Path in Node JS using core modules.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Path",
+    "Filesystems"
+  ],
+  "author": "Siddhartha Mukherjee",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
