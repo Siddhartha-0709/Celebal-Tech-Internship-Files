@@ -21,7 +21,7 @@ node -v
 
 ### Start Script to Run the Server:
 
-To start the server, run `npm start` in the terminal. This will start a server on port `3000` and print out the current date and time.
+To start the server, run `npm start` in the terminal. This will start a server on port `3000`.
 
 ```bash
 npm start
