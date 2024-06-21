@@ -6,7 +6,7 @@ http.createServer((req, res) => {
     // In the below code we try to fetch the data from a sample API and then send it back to the browser window as a response. Here we use the try and catch block for efficient error handling.
     // To fetch data from the API we use the fetch method. Now since fetch method returns a promise we can use .then method to handle the response in this way we can handle the async nature of the code the control will move to the next line once the promise is resolved ie. when the data is fetched as a response. 
 
-    // In this code since we are prefering to use async and await keyword to handle the async nature of the code hence I have commented the below code which uses .then() method.
+    // In this code since we are preffering to use async and await keyword to handle the async nature of the code hence I have commented the below code which uses .then() method.
     
     /*
     try{
