@@ -13,6 +13,7 @@ const createUser = async (req, res) => {
         const user = await userModel.create({ name, email, password });
         res.status(201).json({ message: "User created successfully", user });
     } catch (error) {
+        console.log(error);
         res.status(500).json({ message: "Internal server error in user creation" });
     }
 }
@@ -34,4 +35,4 @@ const userLogin = async (req, res) => {
         res.status(500).json({ message: "Internal server error in user login" });
     }
 }
-export default { createUser, userLogin };
+export { createUser, userLogin };
