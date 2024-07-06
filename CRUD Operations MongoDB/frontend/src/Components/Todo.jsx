@@ -94,7 +94,7 @@ const Todo = () => {
         getTodo();
     }, []);
     return (
-        <div className="flex min-h-screen flex-col bg-gray-950 text-white">
+        <div className="flex min-h-screen flex-col bg-white text-black">
             
             {loader ? (<Loader />) : (<main className="flex-1 container mx-auto px-4 py-8">
                 <h1 className="text-3xl">Hello {state.name.substr(0, state.name.indexOf(" "))},</h1>
@@ -111,8 +111,8 @@ const Todo = () => {
                                     <div className="rounded-md border bg-card p-4 shadow-sm" key={item._id}>
                                         <div className="flex items-center justify-between">
                                             <div>
-                                                <h3 className="text-lg font-bold text-white">{item.title}</h3>
-                                                <p className="text-muted-foreground text-gray-300">{item.description}</p>
+                                                <h3 className="text-lg font-bold text-black">{item.title}</h3>
+                                                <p className="text-muted-foreground text-gray-950">{item.description}</p>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 rounded-md px-3 text-black ml-1 " onClick={() => { handleCompletePressed(item._id) }}>
@@ -169,7 +169,7 @@ const Todo = () => {
                                     ></textarea>
                                 </div>
                                 <button
-                                    className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                    className="bg-black text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 h-10 px-4 py-2 w-full bg-black text-white hover:bg-black/80"
                                     type="submit"
                                 >
                                     Add Todo
@@ -177,6 +177,9 @@ const Todo = () => {
                             </form>
                         </div>
                     </div>
+                </div>
+                <div className="w-full flex justify-center border-t mt-4">
+                    <iframe src="https://lottie.host/embed/0d5c6341-f251-47b2-8cac-9ee27c7c4731/bvKXvAyuHc.json" height={"400px"} width={"400px"}></iframe>
                 </div>
             </main>)}
         </div>
