@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 
@@ -6,7 +8,6 @@ const HomePage = () => {
     <div className="flex min-h-screen flex-col bg-background">
       <header className="bg-primary py-4 text-primary-foreground">
         <div className="container mx-auto px-4">
-          {/* <h1 className="text-2xl font-bold">Todo App</h1> */}
         </div>
       </header>
       <main className="flex-1 container mx-auto px-4 py-8 flex flex-col justify-center items-center">
