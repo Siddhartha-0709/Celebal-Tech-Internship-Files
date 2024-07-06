@@ -15,20 +15,20 @@ const Todo = () => {
     const [loader, showLoader] = useState(false);
     const [todo, setTodo] = useState([]);
 
-    const handleAddTodo = (event) => {
+    const handleAddTodo = async (event) => {
         event.preventDefault();
         console.log("Title:", title);
         console.log("Description:", description);
         showLoader(true);
         try {
-            const response = axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/create', {
+            const response = await axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/create', {
                 title,
                 description,
                 userEmail: state.email
             })
             console.log(response);
             alert("Todo created successfully");
-            getTodo();
+            await getTodo();
         } catch (error) {
             console.log(error);
             alert(error.response.data.message);
@@ -65,7 +65,7 @@ const Todo = () => {
                 id: id
             })
             console.log(response);
-            getTodo();
+            await getTodo();
         } catch (error) {
             console.log(error);
             alert(error.response.data.message);
@@ -82,7 +82,7 @@ const Todo = () => {
                 id: id
             })
             console.log(response);
-            getTodo();
+            await getTodo();
         } catch (error) {
             console.log(error);
             alert(error.response.data.message);
@@ -115,7 +115,7 @@ const Todo = () => {
                                                 <p className="text-muted-foreground text-gray-950">{item.description}</p>
                                             </div>
                                             <div className="flex items-center gap-2">
-                                                <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 rounded-md px-3 text-black ml-1 " onClick={() => { handleCompletePressed(item._id) }}>
+                                                <button className="w-20 inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 rounded-md px-3 text-black ml-1 " onClick={() => { handleCompletePressed(item._id) }}>
                                                     {item.completed ? (<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGZmMmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaXJjbGUtY2hlY2siPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg=="/>) : (<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGZmMmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaXJjbGUteCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJtMTUgOS02IDYiLz48cGF0aCBkPSJtOSA5IDYgNiIvPjwvc3ZnPg=="  />)}
                                                 </button>
                                                 <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 rounded-md px-3 bg-red-500 text-black hover:bg-red-600" onClick={() => { handleDeletePressed(item._id) }}>
