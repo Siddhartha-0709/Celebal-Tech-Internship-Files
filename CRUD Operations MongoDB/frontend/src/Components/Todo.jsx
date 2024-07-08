@@ -22,7 +22,7 @@ const Todo = () => {
         console.log("Description:", description);
         showLoader(true);
         try {
-            const response = await axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/create', {
+            const response = await axios.post('https://lobster-app-lh22k.ondigitalocean.app/api/todo/v1/todo/create', {
                 title,
                 description,
                 userEmail: state.email
@@ -45,7 +45,7 @@ const Todo = () => {
     const getTodo = async () => {
         showLoader(true);
         try {
-            const response = await axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/get', {
+            const response = await axios.post('https://lobster-app-lh22k.ondigitalocean.app/api/todo/v1/todo/get', {
                 userEmail: state.email
             })
             console.log(response);
@@ -62,7 +62,7 @@ const Todo = () => {
         showLoader(true);
         console.log('Modifying todo: ', id);
         try {
-            const response = await axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/updatestatus', {
+            const response = await axios.post('https://lobster-app-lh22k.ondigitalocean.app/api/todo/v1/todo/updatestatus', {
                 id: id
             })
             console.log(response);
@@ -79,7 +79,7 @@ const Todo = () => {
         showLoader(true);
         console.log('Deleting todo: ', id);
         try {
-            const response = await axios.post('https://taskdone-1l0b.onrender.com/api/v1/todo/delete', {
+            const response = await axios.post('https://lobster-app-lh22k.ondigitalocean.app/api/todo/v1/todo/delete', {
                 id: id
             })
             console.log(response);
