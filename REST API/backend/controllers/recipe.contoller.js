@@ -16,6 +16,7 @@ const createRecipe = async (req, res) => {
         const savedRecipe = await recipeModel.create({ title, description, ingredients, instructions, imageURL: imageLink, videoURL, postedBy });
         res.status(201).json(savedRecipe);
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 };

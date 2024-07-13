@@ -5,7 +5,7 @@ import Loader from './Loader';
 const Upload = () => {
     const location = useLocation();
     const { state } = location;
-    console.log(state);
+    // console.log(state);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [ingredients, setIngredients] = useState('');
@@ -16,7 +16,7 @@ const Upload = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if (!title || !description || !ingredients || !instructions || !image || !video) {
+        if (!title || !description || !ingredients || !instructions || !image || !video || !state) {
             alert('Please fill all the fields');
             return;
         }
@@ -30,9 +30,10 @@ const Upload = () => {
             formData.append('image', image);
             formData.append('video', video);
             formData.append('postedBy', state.email);
-            console.log(title, description, ingredients, instructions, image, video);
+            console.log(title, description, ingredients, instructions, image, video, state.email);
             try {
-                const response = await axios.post('http://localhost:3000/api/v1/recipe/create', formData);
+                console.log('Sending');
+                const response = await axios.post('https://recipebook-loih.onrender.com/api/v1/recipe/create', formData);
                 console.log(response.data);
             } catch (error) {
                 alert(error.response.data.message);

@@ -8,7 +8,7 @@ function Home() {
     const getRecipes = async () => {
         try {
             showLoader(true);
-            const response = await axios.get('http://localhost:3000/api/v1/recipe/get-recipe');
+            const response = await axios.get('https://recipebook-loih.onrender.com/api/v1/recipe/get-recipe');
             console.log(response.data);
             setRecipes(response.data);
         } catch (error) {

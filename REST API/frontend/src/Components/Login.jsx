@@ -15,12 +15,12 @@ const Login = () => {
     console.log("Password:", password);
     showLoader(true);
     try {
-      const response = await axios.post('https://lobster-app-lh22k.ondigitalocean.app/api/todo/v1/user/login', {
+      const response = await axios.post('https://recipebook-loih.onrender.com/api/v1/user/login', {
         email,
         password
       })
       console.log(response);
-      navigate("/upload", { state: response.data.user });
+      navigate("/upload", { state: response.data });
     }
     catch (error) {
       console.log(error);

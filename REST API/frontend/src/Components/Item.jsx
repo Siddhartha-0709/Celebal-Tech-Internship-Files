@@ -7,8 +7,8 @@ function Item() {
     // alert(id);
     const [data, setData] = useState([]);
     const getProductDetails = async () => {
-        console.log(`http://localhost:3000/api/v1/recipe/recipe/${id}`);
-        const response = await axios.get(`http://localhost:3000/api/v1/recipe/view?id=${id}`);
+        console.log(`https://recipebook-loih.onrender.com/api/v1/recipe/recipe/${id}`);
+        const response = await axios.get(`https://recipebook-loih.onrender.com/api/v1/recipe/view?id=${id}`);
         console.log(response.data);
         setData(response.data);
     }
