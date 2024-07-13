@@ -41,7 +41,7 @@ function Item() {
             <p className="leading-relaxed">{data.ingredients}</p>
             <h3 className="text-2xl font-bold mt-10">Instructions</h3>
             <p className="leading-relaxed">{data.instructions}</p>
-            <h3 className="text-2xl font-bold mt-10">Video</h3>
+            {/* <h3 className="text-2xl font-bold mt-10">Video</h3> */}
             {/* <p className="leading-relaxed">Link to video: {data.videoURL}</p> */}
           </div>
         </div>
