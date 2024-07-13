@@ -35,9 +35,10 @@ The application is deployed using Vercel and is available at [Link](https://reci
 
 ## API Documentation
 
-* Base URL: `https://recipebook-loih.onrender.com/`
+#### Base URL: 
+`https://recipebook-loih.onrender.com/`
 
-* Endpoints: 
+#### Endpoints: 
 
 * `api/v1/recipes/get-recipe`: Get all recipes available.
 * `api/v1/recipes/create`: Post a new recipe.
