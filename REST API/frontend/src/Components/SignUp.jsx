@@ -41,7 +41,7 @@ const SignUp = () => {
                         <br />
                         <h1 className="text-3xl font-bold">Get Started</h1>
                         <p className="md:text-xl text-sm text-center mt-2">
-                            Organize your thoughts | Increase productivity | Boost creativity!
+                            Share your favorite recipes with the world! 
                         </p>
                     </div>
                     <div className="rounded-lg border bg-card text-card-foreground shadow-sm text-black mx-auto">
@@ -107,7 +107,8 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
-                    <iframe src="https://lottie.host/embed/d071e34c-c1de-44e7-9262-db8d91ee80f1/NYMh1zGieO.json" height={"400px"} width={"400px"} className="md:h-[400px] md:w-[400px] h-[300px] w-[300px]"></iframe>
+                    <iframe src="https://lottie.host/embed/9e44aa42-08e6-4ace-949e-a6fc2ef7ec54/mKqwCpboPi.json" height={"400px"} width={"400px"} className="md:h-[400px] md:w-[400px] h-[300px] w-[300px]"></iframe>
+                    {/* <iframe src="https://lottie.host/embed/d071e34c-c1de-44e7-9262-db8d91ee80f1/NYMh1zGieO.json" height={"400px"} width={"400px"} className="md:h-[400px] md:w-[400px] h-[300px] w-[300px]"></iframe> */}
                 </div>
             </div>
             )}
