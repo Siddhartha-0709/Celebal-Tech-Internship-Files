@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <header className="bg-background py-4 flex items-center justify-between px-4" style={{ borderBottom: '3px solid #000000' }}>
         <Link to={"/"} style={{ display: 'flex', alignItems: 'center' }}>
-          <h1 className="text-3xl font-bold text-primary">RecipeBook</h1>
+          <h1 className="text-3xl font-bold text-primary">RecipeBazaar</h1>
           <iframe src="https://lottie.host/embed/d1c352ca-99e4-4f94-84df-1501eee40d0e/W0QdqPIfIf.json" height="40px" width="80px" className="ml-2"></iframe>
         </Link>
         <div className="flex gap-4">
@@ -34,7 +34,7 @@ function App() {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
             <Link to={"/"}>
-              <h1 className="text-xl font-bold">RecipeBook</h1>
+              <h1 className="text-xl font-bold">RecipeBazaar</h1>
             </Link>
             <iframe src="https://lottie.host/embed/d1c352ca-99e4-4f94-84df-1501eee40d0e/W0QdqPIfIf.json" height="40px" width="80px"></iframe>
             {/* <iframe className="" src="https://lottie.host/embed/22ca8cbe-30df-4f1a-b266-e98838606726/9oYVdSl4XI.json" height="80px" width="80px"></iframe> */}
