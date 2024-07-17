@@ -42,4 +42,14 @@ const getRecipees = async (req, res) => {
         res.status(500).json(err);
     }
 }
-export { createUser, loginUser, getRecipees }
+const deleteRecipeById = async (req, res) => {
+    try {
+        const { id } = req.body;
+        const deletedRecipe = await recipeModel.findByIdAndDelete(id);
+        res.status(200).json(deletedRecipe);
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+}
+export { createUser, loginUser, getRecipees, deleteRecipeById }
