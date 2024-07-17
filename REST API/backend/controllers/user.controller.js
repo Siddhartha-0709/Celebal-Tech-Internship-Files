@@ -1,5 +1,5 @@
 import userModel from "../models/user.model.js";
-
+import recipeModel from "../models/recipe.model.js";
 const createUser = async (req, res) => {
     const { name, email, password } = req.body;
     const user = await userModel.findOne({ email });
@@ -31,4 +31,15 @@ const loginUser = async (req, res) => {
         res.status(500).json(err);
     }
 }
-export { createUser, loginUser }
+
+const getRecipees = async (req, res) => {
+    try {
+        const { email } = req.body;
+        const recipes = await recipeModel.find({postedBy: email});
+        res.status(200).json(recipes);
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+}
+export { createUser, loginUser, getRecipees }
