@@ -1,13 +1,13 @@
 ### Celebal Summer Internship Project
-Name - Siddhartha Mukherjee
-Domain- Node JS Developer
-CSI ID- CT_CSI_NJ_4667
-Assignment Task- Integration of Payment Gateway
+Name - `Siddhartha Mukherjee`
+Domain- `Node JS Developer`
+CSI ID- `CT_CSI_NJ_4667`
+Assignment Task- `Integration of Payment Gateway`
 
 ##### I have used Paypal Sandbox account for Developers to process the Payments 
 ##### Demo Video Link 
 
-![Click Here](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)
+[Click Here to Watch](https://www.youtube.com/watch?v=fnIqWBikfQI)
 
 ### Run app
 
